@@ -5,7 +5,6 @@ import {
     Route
   } from "react-router-dom";
 import LoginScreen from '../components/login/LoginScreen';
-import Marvel from '../components/marvel/Marvel';
 import { Navbar } from '../components/ui/NavBar';
 
 const AppRouter = () => {
@@ -16,7 +15,7 @@ const AppRouter = () => {
 
             <Switch>
                 <Route exact path="/login" component={ LoginScreen } />
-                <Route exact path="/" component={ Marvel } />
+                <Route exact path="/" component={ } />
             </Switch>
         </div>
       </Router>

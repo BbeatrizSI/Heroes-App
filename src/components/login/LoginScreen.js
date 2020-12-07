@@ -7,14 +7,14 @@ const LoginScreen = ({ history }) => {
     const {dispatch} = useContext(AuthContext);
 
     const handleClick = () => {
-               
+            
         dispatch({
             type: types.login,
             payload: {
                 name: 'Bárbara'
             }
-        })
-
+        }) 
+        
         history.replace('/');
     }
 

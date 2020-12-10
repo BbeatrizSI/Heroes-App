@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch
   } from "react-router-dom";
 import { AuthContext } from '../auth/AuthContext';
@@ -14,13 +14,13 @@ const AppRouter = () => {
   const {user} = useContext(AuthContext);
 
     return (
-        <Router>
-        <div>
+      <Router>
+          <div>
             <Switch>
                 <PublicRoute exact path="/login" component={ LoginScreen } isAuthenticated={ user.logged } />
                 <PrivateRoute path="/" component={ DashboardRoutes } isAuthenticated={ user.logged }/>
             </Switch>
-        </div>
+          </div>
       </Router>
     );
 };

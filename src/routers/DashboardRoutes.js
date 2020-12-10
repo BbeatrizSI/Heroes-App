@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import AllScreen from '../components/all/AllScreen';
 import DcScreen from '../components/dc/DcScreen';
 import HeroScreen from '../components/heroes/HeroScreen';
 import MarvelScreen from '../components/marvel/MarvelScreen';
@@ -12,12 +13,13 @@ const DashboardRoutes = () => {
             <Navbar />
             <div className="container mt-3">
                 <Switch>
+                    <Route path="/all" component={ AllScreen } />
                     <Route path="/marvel" component={ MarvelScreen } />
                     <Route path="/hero/:heroId" component={ HeroScreen } />
                     <Route path="/dc" component={ DcScreen } />
-                    <Route exact path="/search" component={ SearchScreen } />
+                    <Route path="/search" component={ SearchScreen } />
 
-                    {/* <Redirect to="/marvel" /> */}
+                    <Redirect to="/" />
                 </Switch>
             </div>
         </>

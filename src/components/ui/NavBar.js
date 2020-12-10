@@ -24,7 +24,7 @@ export const Navbar = () => {
             
             <Link 
                 className="navbar-brand" 
-                to="/"
+                to="/all"
             >
                 Publishers
             </Link>

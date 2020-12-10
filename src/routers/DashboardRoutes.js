@@ -15,7 +15,7 @@ const DashboardRoutes = () => {
                     <Route path="/marvel" component={ MarvelScreen } />
                     <Route path="/hero/:heroId" component={ HeroScreen } />
                     <Route path="/dc" component={ DcScreen } />
-                    <Route path="/search" component={ SearchScreen } />
+                    <Route exact path="/search" component={ SearchScreen } />
 
                     {/* <Redirect to="/marvel" /> */}
                 </Switch>

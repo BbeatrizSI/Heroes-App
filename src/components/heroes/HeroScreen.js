@@ -28,10 +28,11 @@ const HeroScreen = ({ history }) => {
         characters
     } = hero;
 
+    
     return (
         <div className="row mt-5">
             <div className="col-4">
-                <img src={process.env.PUBLIC_URL + `./assets/heroes/${heroId}.jpg`} className="img-thumbnail animate__animated animate__fadeInLeft" alt={superhero} />
+                <img src={`/assets/heroes/${ heroId }.jpg`} className="img-thumbnail animate__animated animate__fadeInLeft" alt={superhero} />
             </div>
             <div className="col-8 animate__animated animate__fadeIn">
                 <h3>{ superhero }</h3>

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import queryString from 'query-string';
 import { useLocation } from 'react-router-dom';
 import { useForm } from '../../hooks/useForm';
 import HeroCard from '../heroes/HeroCard';
 import getHeroByName from '../../selectors/getHeroByName';
-import { useMemo } from 'react/cjs/react.development';
+
 
 const SearchScreen = ({history}) => {
     const location = useLocation();

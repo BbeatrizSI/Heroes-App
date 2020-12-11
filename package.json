@@ -2,7 +2,7 @@
   "name": "heroes-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://bbeatrizsi.github.io/Heroes-App",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "docs": "rm -rf docs && react-scripts build && mv build docs"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,7 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.3.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
-    "enzyme-to-json": "^3.6.1"
+    "enzyme-to-json": "^3.6.1",
+    "gh-pages": "^3.1.0"
   }
 }

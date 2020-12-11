@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch
   } from "react-router-dom";
 import { AuthContext } from '../auth/AuthContext';

@@ -26,7 +26,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/all"
             >
-                Publishers
+                All Heroes
             </Link>
 
             <div className="navbar-collapse">

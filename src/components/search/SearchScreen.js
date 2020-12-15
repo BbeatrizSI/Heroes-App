@@ -29,7 +29,7 @@ const SearchScreen = ({history}) => {
                     <h4>Search form</h4>
                     <hr/>
                     <form onSubmit={handleSearch}>
-                        <input type="text" placeholder="Find your hero" className="form-control" name="searchText" value={ searchText } onChange={ handleInputChange } autoComplete="off"/>
+                        <input type="text" placeholder="Find your hero" className="form-control" name="searchText" value={ searchText } onChange={ handleInputChange } autoComplete="off" required/>
                         <button type="submit" className="btn m-1 btn-block btn-outline-primary">Search</button>
                     </form>
                 </div>
